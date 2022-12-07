@@ -12,4 +12,4 @@ const Loader = function () {
     )
 }
 
-export default Loader; 
+export default Loader;

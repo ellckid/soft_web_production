@@ -20,9 +20,6 @@ const StickySlide = ({ url, title, color, price, id, func }) => {
         return item
     }
 
-
-
-
     return (
         <div className={classes.slide}>
             <div className={classes.slide_container}>

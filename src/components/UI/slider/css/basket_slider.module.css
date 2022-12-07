@@ -10,6 +10,7 @@
     transform: scale(0.9);
     transition: all 0.1s linear;
 }
+
 .slide_container {
     width: 80%;
     height: 100%;

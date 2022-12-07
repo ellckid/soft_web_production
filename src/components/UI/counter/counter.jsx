@@ -70,4 +70,4 @@ const Counter = ({ price, id, ref, func, func2, saveOrNot, count }) => {
     )
 }
 
-export default Counter; 
+export default Counter;

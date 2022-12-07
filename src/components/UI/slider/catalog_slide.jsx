@@ -19,8 +19,6 @@ const CatalogSlide = ({ children, url, title, color, delivery, price, id }) => {
         return item
     }
 
-
-
     return (
         <div className={classes.slide}>
             <div className={classes.slide_container}>
