@@ -1,0 +1,153 @@
+.profile_section {
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.profile_header {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    margin: 20px auto;
+    z-index: 100;
+}
+
+.room {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    gap: 5%;
+    margin: 0 auto;
+
+}
+
+/* profile form */
+.profile_form_container {
+    height: fit-content;
+    width: 65%;
+}
+
+.profile_form {
+    margin: 20vh auto;
+}
+
+/* profile menu */
+.profile_menu_container {
+    height: 100vh;
+    width: 30%;
+}
+
+.profile_menu {
+    background-color: #fff;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    margin: 20vh 0;
+    border-radius: 50px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 20px 20px rgba(0, 0, 0, 0.08);
+}
+
+.profile_menu_title {
+    width: 100%;
+    margin-top: 10vh;
+
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    color: #4F4F4F;
+}
+
+.profile_menu_subtitle {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2vh;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+    color: #4F4F4F;
+}
+
+.menu_button_container {
+    /* background-color: antiquewhite; */
+    width: 80%;
+    margin: 5vh auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.menu_button_link {
+    text-decoration: none;
+}
+
+.menu_button_unact {
+    cursor: pointer;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    outline: none;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: #4F4F4F;
+
+    /* button text */
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    color: #4F4F4F;
+
+    transition: all 0.1s linear;
+}
+
+.menu_button_unact:hover {
+    border-width: 1.5px;
+    font-size: 1.05em;
+}
+
+.menu_button_act {
+    cursor: pointer;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #53A0ED;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+
+    /* button text */
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #fff;
+
+    transition: all 0.1s linear;
+}
+
+.menu_button_act:hover {
+    opacity: 90%;
+}
+
+
+
+
+.profile_footer {
+    margin-top: 0px;
+}
+
+*,
+*,
+before,
+*:after {
+    box-sizing: border-box;
+}

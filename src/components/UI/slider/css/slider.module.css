@@ -1,0 +1,45 @@
+.swiper {
+    width: 100vw;
+    height: 80vh;
+}
+
+.catalog_title_container{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 15vh;
+    align-items: center;
+    gap: 2vw;
+}
+.catalog_title_container{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 15vh;
+    align-items: center;
+    gap: 2vw;
+}
+.catalog_2_title{
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    color: #000 ;
+}
+.catalog_2_link:hover  .catalog_2_link_img{
+    opacity: 70%;
+}
+.catalog_2_link_img:hover{
+    opacity: 70%;
+}
+.catalog_2_link_img{
+    height: 5vh;
+}
+
+.swiper_title {
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none;
+}

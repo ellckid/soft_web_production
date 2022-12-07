@@ -1,0 +1,43 @@
+.login_section {
+    height: 100%;
+    z-index: -1000;
+    overflow: hidden;
+
+}
+
+.room {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    z-index: -1001;
+    overflow: hidden;
+
+}
+
+.login_header {
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    margin: 20px auto;
+    z-index: 100;
+}
+
+.login_container {
+    height: 100vh;
+    border-radius: 0 0 50px 50px;
+    background-color: #FFDC8D;
+    z-index: 1;
+
+}
+
+.login_footer {
+    margin-top: -50px;
+}
+
+*,
+*,
+before,
+*:after {
+    box-sizing: border-box;
+}

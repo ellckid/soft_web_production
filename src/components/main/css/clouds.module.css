@@ -1,0 +1,15 @@
+.clouds_link {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    overflow: hidden;
+}
+
+.clouds_img {
+    position: relative;
+    overflow: hidden;
+    height: 40vh;
+    z-index: -2;
+    top: 0;
+    left: 0;
+}

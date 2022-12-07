@@ -1,0 +1,157 @@
+.main {
+}
+
+
+.catalog_room {
+    width: 100vw;
+    z-index: -1001;
+    overflow: hidden;
+
+}
+
+.room_content {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.sliders_container {
+    margin: 10vh 0;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+}
+
+
+.total_container {
+    position: fixed;
+    width: 50%;
+    right: 0;
+    height: auto;
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.total {
+    margin-top: 40vh;
+    background-color: #fff;
+    width: 80%;
+    height: 20vh;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 20px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+.basket_submenu {
+    width: 200%;
+    margin: 0 0 0 25% ;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    gap: 50%;
+}
+.basket_submenu_open{
+    margin-left: -125%;
+}
+
+.basket_title {
+    font-family: 'Comfortaa';
+    font-weight: 600;
+    font-size: 1.5em;
+
+    color: #181818;
+    text-align: center;
+
+    margin: 3vh auto;
+}
+
+.basket_button {    
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(83, 160, 237, 1);
+    width: 50%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    margin: 0 0 0 0;
+
+
+    transition: all 0.1s linear;
+}
+
+.basket_button:hover {
+    opacity: 90%;
+}
+
+.basket_price {
+    margin-top: 0.5vh;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 2em;
+    color: #fff;
+}
+
+.basket_icon {
+    height: 80%;
+    width: auto;
+}
+.basket_goto_button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(83, 160, 237, 1);
+    width: 50%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    margin: 0 0 0 0;
+
+
+    transition: all 0.1s linear;
+}
+.basket_goto_button:hover{
+    opacity: 90%;
+}
+.basket_goto_title {
+    margin-top: 0.6vh;
+    font-family: 'Comfortaa';
+    font-weight: 700;
+    font-size: 1.8em;
+    color: #fff;
+}
+.basket_goto_icon{
+    height: 40%;
+    width: auto;
+}
+
+.catalog_header {
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    margin: 20px auto;
+    z-index: 100;
+}
+
+
+.room_footer {
+    z-index: 0;
+}
+
+*,
+*,
+before,
+*:after {
+    box-sizing: border-box;
+}

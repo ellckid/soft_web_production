@@ -1,0 +1,17 @@
+.main_footer {
+    background-color: #818A99;
+    height: fit-content;
+    display: flex;
+    width: 100vw;
+    max-height: 40vh;
+    z-index: -1000;
+}
+
+.footer_text {
+    color: white;
+    width: 70%;
+    margin: 15vh auto 10vh auto;
+    text-align: center;
+    font-size: 24px;
+    cursor: default;
+}

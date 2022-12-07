@@ -1,0 +1,96 @@
+.basket_counter {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.counter_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 115px;
+    margin-bottom: 15px;
+    z-index: 10;
+
+}
+
+.counter {
+    position: relative;
+    width: 59px;
+    height: 59px;
+    border-radius: 59px;
+    background-color: #474747;
+    z-index: 10;
+}
+
+.count {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    z-index: 10;
+
+}
+
+.counter_price {
+    margin: 0 auto;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #474747;
+}
+
+.counter_plus {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+    z-index: 10;
+}
+
+.counter_plus:hover {
+    opacity: 80%;
+}
+
+.plus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+
+.counter_minus {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    justify-content: center;
+    z-index: 20;
+}
+
+.counter_minus:hover {
+    opacity: 80%;
+    z-index: 20;
+}
+
+.minus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 8px;
+}

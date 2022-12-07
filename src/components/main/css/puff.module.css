@@ -1,0 +1,44 @@
+.puff {
+    justify-content: center;
+    position: absolute;
+    left: 28vw;
+    top: 30vh;
+    width: fit-content;
+}
+
+.puff_link_1 {
+    /* background-color: black;
+    opacity: 30%; */
+    position: absolute;
+    width: 70vh;
+    height: 35vh;
+    margin-top: 25vh;
+    border-radius: 300px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.puff_link_2 {
+    /* background-color: black;
+    opacity: 30%; */
+    position: absolute;
+    width: 40vh;
+    height: 58vh;
+    margin-left: 28vh;
+    border-radius: 300px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.puff_link_1:hover~.puff_img {
+    transform: scale(1.03);
+}
+
+.puff_link_2:hover~.puff_img {
+    transform: scale(1.03);
+}
+
+.puff_img {
+    width: 70vh;
+    transition: all 0.1s linear;
+}

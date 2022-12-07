@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Бескаркасное кресло",
+    "color": "Цвет: синий",
+    "delivery": "Бесплатная доставка",
+    "url": "/assets/img/puffes/blue.png",
+    "price": "3000₽"
+  },
+  {
+    "title": "Бескаркасное кресло",
+    "color": "Цвет: коричневый",
+    "delivery": "      ",
+    "url": "/assets/img/puffes/brown.png",
+    "price": "2500₽"
+  },
+  {
+    "title": "Бескаркасное кресло",
+    "color": "Цвет: темно-синий",
+    "delivery": "Бесплатная доставка",
+    "url": "/assets/img/puffes/dark_blue.png",
+    "price": "3500₽"
+  },
+  {
+    "title": "Бескаркасное кресло",
+    "color": "Цвет: зеленый",
+    "delivery": "      ",
+    "url": "/assets/img/puffes/green.png",
+    "price": "4000₽"
+  },
+  {
+    "title": "Бескаркасное кресло",
+    "color": "Цвет: розовый",
+    "delivery": "Бесплатная доставка",
+    "url": "/assets/img/puffes/pink.png",
+    "price": "3000₽"
+  },
+  {
+    "title": "Бескаркасное кресло",
+    "color": "Цвет: красный",
+    "delivery": "       ",
+    "url": "/assets/img/puffes/red.png",
+    "price": "3000₽"
+  },
+  {
+    "title": "Бескаркасное кресло",
+    "color": "Цвет: песочный",
+    "delivery": "Бесплатная доставка",
+    "url": "/assets/img/puffes/sand.png",
+    "price": "3000₽"
+  },
+  {
+    "title": "Бескаркасное кресло",
+    "color": "Цвет: желтый",
+    "delivery": "        ",
+    "url": "/assets/img/puffes/yellow.png",
+    "price": "3000₽"
+  }
+]

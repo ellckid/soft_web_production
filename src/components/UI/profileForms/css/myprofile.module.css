@@ -1,0 +1,99 @@
+.profile {
+    width: 100%;
+    height: 60vh;
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    box-shadow: 0px 0px 2px rgb(0 0 0 / 12%), 0px 20px 20px rgb(0 0 0 / 8%);
+}
+
+.inputs {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10vh auto;
+
+}
+
+.inputs_name_top {
+    font-family: 'Comfortaa';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 1.3em;
+    color: #4F4F4F;
+}
+
+.inputs_name {
+    margin-top: 4vh;
+    font-family: 'Comfortaa';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 1.3em;
+    color: #4F4F4F;
+}
+
+.email_input {
+    margin: 0 auto;
+    margin-top: 1vh;
+    width: 100%;
+    height: 50px;
+    background-clip: padding-box;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #4F4F4F;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.email_auth {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 500;
+    color: #4F4F4F;
+    margin-top: 1vh;
+    font-size: 1em;
+}
+
+.red_color {
+    color: rgba(168, 6, 6, 1);
+}
+
+.green_color {
+    color: rgba(23, 114, 54, 1);
+}
+
+.password_form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.password_input {
+    width: 100%;
+    height: 100%;
+    background-clip: padding-box;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #4F4F4F;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.password_eye {
+    cursor: pointer;
+    position: absolute;
+    right: 1vw;
+    width: 20px;
+    height: 20px;
+}

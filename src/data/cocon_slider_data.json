@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Бескаркасный кокон",
+    "color": "Цвет: синий",
+    "delivery": "Бесплатная доставка",
+    "url": "/assets/img/cocons/blue.png",
+    "price": 3000
+  },
+  {
+    "title": "Бескаркасный кокон",
+    "color": "Цвет: темно-зеленый",
+    "delivery": "      ",
+    "url": "/assets/img/cocons/dark_green.png",
+    "price": 2500
+  }
+]
+  

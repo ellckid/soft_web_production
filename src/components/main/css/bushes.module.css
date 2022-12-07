@@ -1,0 +1,63 @@
+.bushes_container {
+    position: absolute;
+    display: flex;
+    width: fit-content;
+    right: 5vw;
+    bottom: 0;
+
+}
+
+.bushes {
+    aspect-ratio: 480/683;
+    height: 70vh;
+}
+
+.leaf1 {
+    cursor: pointer;
+    position: absolute;
+    width: 9vh;
+    height: auto;
+    right: 17vh;
+    bottom: 56vh;
+    z-index: 10;
+}
+
+.leaf2 {
+    cursor: pointer;
+    position: absolute;
+    width: 7vh;
+    height: auto;
+    right: 7vh;
+    bottom: 42vh;
+    z-index: 10;
+}
+
+.leaf3 {
+    cursor: pointer;
+    position: absolute;
+    width: 8vh;
+    height: auto;
+    right: 26vh;
+    bottom: 47vh;
+    z-index: 10;
+}
+
+.leaf4 {
+    cursor: pointer;
+    position: absolute;
+    width: 6vh;
+    height: auto;
+    right: 15vh;
+    bottom: 47vh;
+    z-index: 10;
+}
+
+.leaf5 {
+    cursor: pointer;
+    position: absolute;
+    width: 10vh;
+    height: auto;
+    right: 19vh;
+    bottom: 34vh;
+    z-index: 10;
+}

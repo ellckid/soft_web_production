@@ -1,0 +1,43 @@
+.order_container {
+    background-color: aliceblue;
+    height: 15vh;
+    width: 100%;
+    border-radius: 50px;
+    margin-bottom: 5vh;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 20px 20px rgba(0, 0, 0, 0.08);
+}
+
+.order {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+
+}
+
+.order_title {}
+
+.order_price {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #4F4F4F;
+
+}
+
+.order_preview_container {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    gap: 2vh;
+
+}
+
+.order_preview {
+    height: 100%;
+    width: auto;
+}
