@@ -18,6 +18,7 @@ function RegistrationPage() {
     if (store.isLoading) {
         return <Loader />
     }
+
     return (
         <section className={classes.reg_section}>
             {/* header */}

@@ -15,7 +15,7 @@ function LoginPage() {
             store.checkAuth();
         }
     }, [])
-    
+
     if (store.isLoading) {
         return <Loader />
     }

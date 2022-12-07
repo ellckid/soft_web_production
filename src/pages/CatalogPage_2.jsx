@@ -51,21 +51,21 @@ function CatalogPage_2() {
             <div className={classes.catalog_room}>
                 <div className={classes.catalog_container}>
                     <div className={classes.catalog_title_container}>
-                        <Link className={classes.catalog_2_link} to="/catalog"><img className={classes.catalog_2_link_img} src="/assets/img/view_icon.png"/></Link>
+                        <Link className={classes.catalog_2_link} to="/catalog"><img className={classes.catalog_2_link_img} src="/assets/img/view_icon.png" /></Link>
                         <h1 className={classes.catalog_2_title}>Все пуфики</h1>
-                        <Link className={classes.catalog_2_link} to="/catalog-2"><img className={classes.catalog_2_link_img} src="/assets/img/allview_icon.png"/></Link>
+                        <Link className={classes.catalog_2_link} to="/catalog-2"><img className={classes.catalog_2_link_img} src="/assets/img/allview_icon.png" /></Link>
                     </div>
-                <div className={classes.sliders_container}>
-                    {
-                        products.map((item, id) => (
-                            <div key={id}>
-                                {/* добавляем слайд */}
-                                <CatalogSlide title={item.title} color={item.color} url={item.url} price={item.price} id = {id}>
-                                </CatalogSlide>
-                            </div>
-                        ))
-                    }
-                </div>
+                    <div className={classes.sliders_container}>
+                        {
+                            products.map((item, id) => (
+                                <div key={id}>
+                                    {/* добавляем слайд */}
+                                    <CatalogSlide title={item.title} color={item.color} url={item.url} price={item.price} id={id}>
+                                    </CatalogSlide>
+                                </div>
+                            ))
+                        }
+                    </div>
                 </div>
                 {/* <!-- footer --> */}
                 <div className={classes.room_footer}>
