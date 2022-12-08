@@ -1,6 +1,6 @@
 import { observer } from 'mobx-react-lite';
 import React, { useContext } from 'react';
-import { Redirect, Route, Switch } from "react-router-dom";
+import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
 import { context } from '..';
 import { privateRoutes, publicRoutes } from "../router";
 import Loader from './UI/loader/Loader';
@@ -18,7 +18,7 @@ const AppRouter = () => {
         (store.isAuth)
 
             ?
-            <Switch>
+            <HashRouter>
                 {privateRoutes.map(route =>
                     <Route
                         component={route.component}
@@ -28,9 +28,9 @@ const AppRouter = () => {
                     />
                 )}
                 <Redirect to='/main' />
-            </Switch>
+            </HashRouter>
             :
-            <Switch>
+            <HashRouter>
                 {publicRoutes.map(route =>
                     <Route
                         component={route.component}
@@ -40,7 +40,7 @@ const AppRouter = () => {
                     />
                 )}
                 <Redirect to='/login' />
-            </Switch>
+            </HashRouter>
     );
 };
 
