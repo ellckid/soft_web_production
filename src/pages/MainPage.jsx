@@ -24,11 +24,11 @@ function MainPage() {
     return (
         <section className={classes.main}>
             {/* header */}
-            <div className={classes.room_header}>
-                <Header
-                    isLight={true}
-                />
-            </div>
+
+            <Header
+                isLight={true}
+            />
+
             <div className={classes.room}>
 
                 {/* <!-- bacground sun clouds puff books bushes --> */}

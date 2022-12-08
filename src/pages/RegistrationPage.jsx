@@ -22,12 +22,12 @@ function RegistrationPage() {
     return (
         <section className={classes.reg_section}>
             {/* header */}
-            <div className={classes.reg_header}>
-                <Header
-                    isLight={false}
-                />
 
-            </div>
+            <Header
+                isLight={false}
+            />
+
+
             <div className={classes.room}>
                 <div className={classes.reg_container}>
                     <RegForm />

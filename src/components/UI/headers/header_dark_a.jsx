@@ -7,13 +7,11 @@ import { Link } from "react-router-dom";
 const HeaderDark_a = function () {
     const { store } = useContext(context);
     return (
-        // < header className={classes.header} >
-        <div className={classes.container}>
-            <div className={classes.header_inner}>
+        <div className={classes.header_container}>
+            <div className={classes.header}>
                 <a className={classes.logo} href="/index.html">
                     <img className={classes.logo_img} src="/assets/img/logo.png" />
                 </a>
-                <div className={classes.header_empty}></div>
                 <nav className={classes.nav}>
                     <Link className={classes.nav_link} to="/catalog">каталог</Link>
                     <Link className={classes.nav_link} to="/basket">корзина</Link>
@@ -31,7 +29,6 @@ const HeaderDark_a = function () {
                 </nav>
             </div>
         </div>
-        // </header >
     )
 }
 

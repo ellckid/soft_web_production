@@ -53,11 +53,11 @@ function CatalogPage() {
     return (
         <section className={classes.main}>
             {/* header */}
-            <div className={classes.catalog_header}>
-                <Header
-                    isLight={false}
-                />
-            </div>
+
+            <Header
+                isLight={false}
+            />
+
 
             <div className={classes.catalog_room}>
                 <div className={classes.sliders_container}>

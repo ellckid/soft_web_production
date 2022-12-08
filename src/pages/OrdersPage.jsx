@@ -39,11 +39,11 @@ function OrdersPage() {
     return (
         <section className={classes.profile_section}>
             {/* header */}
-            <div className={classes.profile_header}>
-                <Header
-                    isLight={false}
-                />
-            </div>
+
+            <Header
+                isLight={false}
+            />
+
             <div className={classes.room}>
                 <div className={classes.profile_menu_container}>
                     <div className={classes.profile_menu}>

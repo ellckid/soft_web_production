@@ -1,6 +1,6 @@
-.header {
-    margin-top: 10px;
+.header_container {
     width: 100%;
+    height: 10vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -8,18 +8,12 @@
     z-index: 1000;
 }
 
-.header_inner {
+.header {
     display: flex;
-    justify-content: space-between;
-}
-
-
-/* контейнер*/
-.container {
     width: 90%;
-    min-width: 500px;
-    max-width: 1920px;
     margin: 0 auto;
+    margin-top: 3vh;
+    justify-content: space-between;
 }
 
 /* навигация*/
@@ -37,11 +31,17 @@
 
 .nav {
     margin-top: 8px;
-    margin-right: 50px;
-    font-size: 40px;
 }
 
 .nav_link {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    text-align: center;
+
+    color: #000000;
+
     display: inline-block;
     vertical-align: top;
     margin: 0 30px;
@@ -51,7 +51,7 @@
 }
 
 .nav_link:hover {
-    color: #808080;
+    text-decoration-line: underline;
 }
 
 .smile_img {
@@ -62,8 +62,9 @@
 
 
 .enter_link {
-    width: 100px;
+    width: fit-content;
     margin: 0 auto;
+    margin-top: -1.7%;
     z-index: 10000;
     display: inline-flex;
     flex-direction: column;
@@ -75,30 +76,38 @@
 
 .nav_submenu_hover {
     height: 40px;
-    width: 100px;
-
+    width: 8vw;
 }
 
 .nav_submenu {
     position: absolute;
-    width: 30vw;
+    width: 15vw;
+    height: fit-content;
     background-color: #fff;
-    border-radius: 50px;
+    border-radius: 10px;
     z-index: 1000;
     margin-top: -10px;
-    padding: 20px 0px;
+    padding: 0;
     transition: display 0.1s linear;
     display: none;
-    right: 4vw;
+    flex-direction: column;
+    right: 5vw;
 }
 
 .nav_submenu_link {
-    margin-bottom: 20px;
+    width: 90%;
+    height: 90%;
+    margin: 1.2vh auto;
     text-align: center;
     color: rgb(0, 0, 0);
-    vertical-align: top;
-    cursor: pointer;
     text-decoration: none;
+    cursor: pointer;
+
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 

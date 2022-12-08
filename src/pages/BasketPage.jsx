@@ -68,11 +68,10 @@ function BasketPage() {
     return (
         <section ref={basketSection} className={classes.main}>
             {/* header */}
-            <div className={classes.catalog_header}>
-                <Header
-                    isLight={false}
-                />
-            </div>
+            <Header
+                isLight={false}
+            />
+
 
             <div className={classes.catalog_room}>
                 <div className={classes.room_content}>

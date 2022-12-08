@@ -22,12 +22,12 @@ function LoginPage() {
     return (
         <section className={classes.login_section}>
             {/* header */}
-            <div className={classes.login_header}>
-                <Header
-                    isLight={false}
-                />
 
-            </div>
+            <Header
+                isLight={false}
+            />
+
+
             <div className={classes.room}>
                 <div className={classes.login_container}>
                     <AuthForm />
