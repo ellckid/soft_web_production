@@ -9,9 +9,9 @@ const HeaderLight_a = function () {
     return (
         <div className={classes.header_container}>
             <div className={classes.header}>
-                <a className={classes.logo} href="/index.html">
+                <Link className={classes.logo} to="/main">
                     <img className={classes.logo_img} src="/assets/img/logo.png" />
-                </a>
+                </Link>
                 <nav className={classes.nav}>
                     <Link className={classes.nav_link} to="/catalog">каталог</Link>
                     <Link className={classes.nav_link} to="/basket">корзина</Link>
