@@ -1,8 +1,8 @@
 import React from 'react';
 import Counter from '../counter/counter'
-import classes from "./css/basket_slide.module.css"
+import classes from "./css/basket_slide.module.css";
 
-const BasketSlide = ({ url, title, color, price, id, func, count }) => {
+const BasketSlide = ({ url, title, color, price, id, func, count, delfunc }) => {
 
     return (
         <div className={classes.slide}>
@@ -17,8 +17,12 @@ const BasketSlide = ({ url, title, color, price, id, func, count }) => {
                 <div className={classes.counter_container}>
                     <Counter func={func} count={count} func2={func} id={id} price={price} saveOrNot={true} />
                 </div>
+                <button onClick={() => {
+                    delfunc(id)
+                    func()
+                }} className={classes.delete_item_btn}><img className={classes.delete_item_img} src='/assets/img/cross.png' /></button>
             </div>
-        </div>
+        </div >
     );
 };
 

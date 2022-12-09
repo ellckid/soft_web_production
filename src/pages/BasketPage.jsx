@@ -48,6 +48,9 @@ function BasketPage() {
 
 
     }, [])
+    useEffect(() => {
+        getTotalPrice()
+    }, [store.basket])
 
     if (store.isLoading) {
         return <Loader />
@@ -65,6 +68,36 @@ function BasketPage() {
             console.log("           ")
         )
     }
+
+    function deleteBasketItem(id) {
+
+        let index
+        for (let i = 0; i < store.basket.length; i++) {
+            console.log(store.basket[i])
+            if (store.basket[i].id == id) {
+                index = i
+                console.log(index)
+
+            }
+        }
+
+        let summ = 0
+        for (let i = 0; i < store.basket.length; i++) {
+            summ = summ + parseInt(localStorage.getItem(i))
+            console.log('\x1b[36m%s\x1b[0m', "значение карточки " + localStorage.getItem(i))
+            console.log("промежуточная сумма " + summ)
+        }
+
+        store.basket.splice(index, 1)
+
+        return (
+            setTotalPrice(summ),
+            console.log("           "),
+            console.log('кнопа нажата')
+        )
+    }
+
+
     return (
         <section ref={basketSection} className={classes.main}>
             {/* header */}
@@ -72,11 +105,11 @@ function BasketPage() {
                 isLight={false}
             />
 
-
             <div className={classes.catalog_room}>
                 <div className={classes.room_content}>
                     <div className={classes.sliders_container}>
                         <BasketSlider
+                            delfunc={deleteBasketItem}
                             func={getTotalPrice}
                             type=""
                             data={store.basket}
@@ -88,9 +121,10 @@ function BasketPage() {
                             <div ref={basket_submenu} className={classes.basket_submenu}>
                                 <button className={classes.basket_button} onClick={() => {
                                     if (store.basket.length != 0) {
-                                        store.addOrder(store.user.id, store.basket, TotalPrice)
-                                        console.log('запрос отправлен')
-                                        basket_submenu.current.classList.toggle(classes.basket_submenu_open)
+                                        store.addOrder(store.user.id, store.basket, TotalPrice);
+                                        console.log('запрос отправлен');
+                                        basket_submenu.current.classList.toggle(classes.basket_submenu_open);
+                                        store.basket.length = 0;
                                     }
                                 }}>
                                     <a className={classes.basket_price}>{TotalPrice}₽</a>
