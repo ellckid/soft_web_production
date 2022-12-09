@@ -56,14 +56,14 @@ const Counter = ({ price, id, ref, func, func2, saveOrNot, count }) => {
         <div className={classes.basket_counter}>
             <div className={classes.counter_container}>
                 <button className={classes.counter_plus} onClick={() => {
-                    increment()
-                    func2()
-                }}><img className={classes.plus} src='/assets/img/plus.png' /></button>
-                <div className={classes.counter}><a className={classes.count}>{Сount}</a></div>
-                <button className={classes.counter_minus} onClick={() => {
                     decrement()
                     func()
-                }}><img className={classes.minus} src='/assets/img/minus.png' /></button>
+                }}><img className={classes.plus} src='/assets/img/minus.png' /></button>
+                <div className={classes.counter}><a className={classes.count}>{Сount}</a></div>
+                <button className={classes.counter_minus} onClick={() => {
+                    increment()
+                    func2()
+                }}><img className={classes.minus} src='/assets/img/plus.png' /></button>
             </div>
             <a className={classes.counter_price} >{Price}₽</a>
         </div>
