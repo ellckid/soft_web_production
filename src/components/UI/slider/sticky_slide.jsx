@@ -42,7 +42,7 @@ const StickySlide = ({ url, title, color, price, id, func }) => {
                         }
                         } className={classes.slide_button}>
                             <a className={classes.button_price}>{price}₽</a>
-                            <img className={classes.button_icon} src="/assets/img/iconContainer.png"></img>
+                            <img className={classes.button_icon} src="/assets/img/container_icon.png"></img>
                         </button>
                     </div>
                     <Link to='/basket' className={classes.counter_container}>
