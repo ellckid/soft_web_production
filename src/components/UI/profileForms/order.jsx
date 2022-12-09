@@ -16,7 +16,7 @@ const Order = ({ userid, orderlist, totalprice }) => {
                         ))
                     }
                 </div>
-                <h3 className={classes.order_price}>{totalprice}Р</h3>
+                <h3 className={classes.order_price}>{totalprice}₽</h3>
             </div>
         </div>
 
