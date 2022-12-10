@@ -1,34 +1,296 @@
-.puff {
-    justify-content: center;
-    position: absolute;
-    left: 28vw;
-    top: 30vh;
-    width: fit-content;
-}
-
-.puff_link_1 {
-    /* background-color: black;
-    opacity: 30%; */
-    position: absolute;
-    width: 70vh;
-    height: 35vh;
-    margin-top: 25vh;
-    border-radius: 300px;
-    cursor: pointer;
-    z-index: 2;
+/* .puff_link_1 {
+    background-color: black;
+    opacity: 30%;
 }
 
 .puff_link_2 {
-    /* background-color: black;
-    opacity: 30%; */
-    position: absolute;
-    width: 40vh;
-    height: 58vh;
-    margin-left: 28vh;
-    border-radius: 300px;
-    cursor: pointer;
-    z-index: 2;
+    background-color: black;
+    opacity: 30%;
+} */
+
+@media (width > 1519px) {
+    .puff {
+        justify-content: center;
+        position: absolute;
+        left: 28vw;
+        top: 30vh;
+        width: fit-content;
+    }
+
+    .puff_link_1 {
+        position: absolute;
+        width: 70vh;
+        height: 35vh;
+        margin-top: 25vh;
+        border-radius: 300px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .puff_link_2 {
+        position: absolute;
+        width: 40vh;
+        height: 58vh;
+        margin-left: 28vh;
+        border-radius: 300px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .puff_img {
+        width: 70vh;
+        transition: all 0.1s linear;
+    }
 }
+
+@media (width < 1520px) {
+    .puff {
+        justify-content: center;
+        position: absolute;
+        left: 27vw;
+        top: 30vh;
+        width: fit-content;
+    }
+
+    .puff_link_1 {
+        position: absolute;
+        width: 62vh;
+        height: 30vh;
+        margin-top: 22vh;
+        border-radius: 300px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .puff_link_2 {
+        position: absolute;
+        width: 33vh;
+        height: 54vh;
+        margin-left: 30vh;
+        border-radius: 300px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .puff_img {
+        width: 65vh;
+        transition: all 0.1s linear;
+    }
+}
+
+@media (width < 1420px) {
+    .puff {
+        justify-content: center;
+        position: absolute;
+        left: 24vw;
+        top: 30vh;
+        width: fit-content;
+    }
+
+    .puff_link_1 {
+        position: absolute;
+        width: 60vh;
+        height: 30vh;
+        margin-top: 22vh;
+        border-radius: 300px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .puff_link_2 {
+        position: absolute;
+        width: 30vh;
+        height: 54vh;
+        margin-left: 32vh;
+        border-radius: 300px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .puff_img {
+        width: 65vh;
+        transition: all 0.1s linear;
+    }
+}
+
+@media (width < 1280px) {
+    .puff {
+        justify-content: center;
+        position: absolute;
+        left: 24vw;
+        top: 35vh;
+        width: fit-content;
+    }
+
+    .puff_link_1 {
+        position: absolute;
+        width: 60vh;
+        height: 30vh;
+        margin-top: 20vh;
+        border-radius: 300px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .puff_link_2 {
+        position: absolute;
+        width: 27vh;
+        height: 50vh;
+        margin-left: 32vh;
+        border-radius: 300px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .puff_img {
+        width: 60vh;
+        transition: all 0.1s linear;
+    }
+}
+
+@media (width < 1240px) {
+    .puff {
+        justify-content: center;
+        position: absolute;
+        left: 38vw;
+        top: 35vh;
+        width: fit-content;
+    }
+
+    .puff_link_1 {
+        position: absolute;
+        width: 60vh;
+        height: 30vh;
+        margin-top: 20vh;
+        border-radius: 300px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .puff_link_2 {
+        position: absolute;
+        width: 27vh;
+        height: 50vh;
+        margin-left: 32vh;
+        border-radius: 300px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .puff_img {
+        width: 60vh;
+        transition: all 0.1s linear;
+    }
+}
+
+@media (width < 1000px) {
+    .puff {
+        justify-content: center;
+        position: absolute;
+        left: 24vw;
+        top: 35vh;
+        width: fit-content;
+    }
+
+    .puff_link_1 {
+        position: absolute;
+        width: 60vh;
+        height: 30vh;
+        margin-top: 20vh;
+        border-radius: 300px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .puff_link_2 {
+        position: absolute;
+        width: 27vh;
+        height: 50vh;
+        margin-left: 32vh;
+        border-radius: 300px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .puff_img {
+        width: 60vh;
+        transition: all 0.1s linear;
+    }
+}
+
+@media (width < 800px) {
+    .puff {
+        justify-content: center;
+        position: absolute;
+        left: 14vw;
+        top: 45vh;
+        width: fit-content;
+    }
+
+    .puff_link_1 {
+        position: absolute;
+        width: 50vh;
+        height: 24vh;
+        margin-top: 17vh;
+        border-radius: 300px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .puff_link_2 {
+        position: absolute;
+        width: 27vh;
+        height: 40vh;
+        margin-left: 22vh;
+        border-radius: 300px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .puff_img {
+        width: 50vh;
+        transition: all 0.1s linear;
+    }
+}
+
+
+@media (width < 500px) {
+    .puff {
+        justify-content: center;
+        position: absolute;
+        left: 10vw;
+        top: 50vh;
+        width: fit-content;
+    }
+
+    .puff_link_1 {
+        position: absolute;
+        width: 45vh;
+        height: 23vh;
+        margin-top: 14vh;
+        border-radius: 300px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .puff_link_2 {
+        position: absolute;
+        width: 25vh;
+        height: 38vh;
+        margin-left: 20vh;
+        border-radius: 300px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .puff_img {
+        width: 45vh;
+        transition: all 0.1s linear;
+    }
+}
+
+
+
 
 .puff_link_1:hover~.puff_img {
     transform: scale(1.03);
@@ -36,9 +298,4 @@
 
 .puff_link_2:hover~.puff_img {
     transform: scale(1.03);
-}
-
-.puff_img {
-    width: 70vh;
-    transition: all 0.1s linear;
 }

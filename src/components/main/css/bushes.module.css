@@ -1,11 +1,37 @@
-.bushes_container {
-    position: absolute;
-    display: flex;
-    width: fit-content;
-    right: 5vw;
-    bottom: 0;
+@media (width > 1329px) {
+    .bushes_container {
+        position: absolute;
+        display: flex;
+        width: fit-content;
+        right: 5vw;
+        bottom: 0;
 
+    }
 }
+
+@media (width < 1320px) {
+    .bushes_container {
+        position: absolute;
+        display: flex;
+        width: fit-content;
+        right: 1vw;
+        bottom: 0;
+
+    }
+}
+
+@media (width < 1240px) {
+    .bushes_container {
+        position: absolute;
+        display: none;
+        width: fit-content;
+        right: 0vw;
+        bottom: 0;
+
+    }
+}
+
+
 
 .bushes {
     aspect-ratio: 480/683;

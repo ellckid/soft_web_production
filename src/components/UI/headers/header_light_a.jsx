@@ -20,6 +20,8 @@ const HeaderLight_a = function () {
                         <div className={classes.nav_submenu_hover} ></div>
                     </div>
                     <ul className={classes.nav_submenu}>
+                        <Link className={classes.nav_link_submenu} to="/catalog">Каталог</Link>
+                        <Link className={classes.nav_link_submenu} to="/basket">Корзина</Link>
                         <Link className={classes.nav_submenu_link} to="/myorders">Мой кабинет</Link>
                         <Link className={classes.nav_submenu_link} onClick={() => {
                             store.isAuth = false
