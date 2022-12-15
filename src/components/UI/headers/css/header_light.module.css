@@ -16,8 +16,7 @@
     justify-content: space-between;
 }
 
-
-@media (width > 1439px) {
+@media (min-width: 1439px) {
 
     .logo {
         margin-top: -8px;
@@ -36,7 +35,7 @@
     }
 }
 
-@media (width > 799px) {
+@media (min-width: 799px) {
 
     .logo {
         margin-top: -4px;
@@ -55,7 +54,7 @@
     }
 }
 
-@media (width < 800px) {
+@media (max-width: 800px) {
 
     .logo {
         margin-top: 8px;
@@ -74,7 +73,7 @@
     }
 }
 
-@media (width > 1439px) {
+@media (min-width: 1439px) {
     .nav_link {
         font-family: 'Comfortaa';
         font-style: normal;
@@ -90,7 +89,7 @@
     }
 }
 
-@media (width < 1440px) {
+@media (max-width: 1440px) {
     .nav_link {
         display: none;
     }
@@ -113,14 +112,14 @@
     rotate: 180deg;
 }
 
-@media (width > 799px) {
+@media (min-width: 799px) {
     .smile_img {
         margin: 0 auto;
         transition: all 0.1s linear;
     }
 }
 
-@media (width < 800px) {
+@media (max-width: 800px) {
     .smile_img {
         width: 40px;
         margin: 0 auto;
@@ -130,14 +129,14 @@
 }
 
 
-@media (width > 1439px) {}
+@media (min-width: 1439px) {}
 
 .nav_submenu_hover {
     height: 40px;
     width: 8vw;
 }
 
-@media (width > 1439px) {
+@media (min-width: 1439px) {
     .nav_link_submenu {
         display: none;
     }
@@ -159,7 +158,7 @@
     }
 }
 
-@media (width > 999px) {
+@media (min-width: 999px) {
     .nav_submenu {
         position: absolute;
         width: 15vw;
@@ -176,7 +175,7 @@
     }
 }
 
-@media (width < 1000px) {
+@media (max-width: 1000px) {
     .nav_submenu {
         position: absolute;
         width: 22vw;
@@ -193,7 +192,7 @@
     }
 }
 
-@media (width < 500px) {
+@media (max-width: 500px) {
     .nav_submenu {
         position: absolute;
         width: 82vw;
@@ -210,7 +209,7 @@
     }
 }
 
-@media (width < 1440px) {
+@media (max-width: 1440px) {
     .nav_link_submenu {
         width: 90%;
         height: 90%;
@@ -244,7 +243,7 @@
     }
 }
 
-@media (width < 800px) {
+@media (max-width: 800px) {
     .nav_link_submenu {
         width: 90%;
         height: 90%;
@@ -278,7 +277,7 @@
     }
 }
 
-@media (width < 500px) {
+@media (max-width: 500px) {
     .nav_link_submenu {
         width: 90%;
         height: 90%;

@@ -1,4 +1,4 @@
-@media (width > 1329px) {
+@media screen and (min-width: 1329px) {
     .bushes_container {
         position: absolute;
         display: flex;
@@ -9,7 +9,7 @@
     }
 }
 
-@media (width < 1320px) {
+@media screen and (max-width: 1320px) {
     .bushes_container {
         position: absolute;
         display: flex;
@@ -20,7 +20,7 @@
     }
 }
 
-@media (width < 1240px) {
+@media screen and (max-width: 1240px) {
     .bushes_container {
         position: absolute;
         display: none;

@@ -22,7 +22,7 @@
 }
 
 
-@media (width > 1239px) {
+@media (min-width: 1239px) {
     .room_sun_img {
         position: absolute;
         z-index: -2;
@@ -30,7 +30,7 @@
     }
 }
 
-@media (width < 1240px) {
+@media (max-width: 1240px) {
     .room_sun_img {
         position: absolute;
         z-index: -2;
@@ -43,13 +43,13 @@
     left: 25vw;
 }
 
-@media (width < 1000px) {
+@media (max-width: 1000px) {
     .room_books_img {
         display: none;
     }
 }
 
-@media (width > 999px) {
+@media (min-width: 999px) {
     .room_books_img {
         height: 100vh;
         position: absolute;
