@@ -125,18 +125,87 @@
     margin-left: -215%;
 }
 
-.button_price {
-    text-align: center;
-    font-family: Inter, sans-serif;
-    font-size: 2em;
-    color: #fff;
+@media (min-width: 1580px) {
 
+    .button_price {
+        text-align: center;
+        font-family: Inter, sans-serif;
+        font-size: 2em;
+        color: #fff;
+
+    }
+
+    .button_icon {
+        margin-top: -2px;
+        height: 70%;
+    }
 }
 
-.button_icon {
-    margin-top: -2px;
-    height: 70%;
+@media (max-width: 1581px) {
+
+    .button_price {
+        text-align: center;
+        font-family: Inter, sans-serif;
+        font-size: 1.5em;
+        color: #fff;
+
+    }
+
+    .button_icon {
+        margin-top: -2px;
+        height: 60%;
+    }
 }
+
+@media (max-width: 1290px) {
+
+    .button_price {
+        text-align: center;
+        font-family: Inter, sans-serif;
+        font-size: 1.3em;
+        color: #fff;
+    }
+
+    .button_icon {
+        margin-top: -2px;
+        height: 60%;
+    }
+}
+
+@media (max-width: 1120px) {
+
+    .button_price {
+        text-align: center;
+        font-family: Inter, sans-serif;
+        font-size: 1.3em;
+        color: #fff;
+        display: none;
+
+    }
+
+    .button_icon {
+        margin-top: -2px;
+        height: 50%;
+    }
+}
+
+@media (max-width: 965px) {
+
+    .button_price {
+        text-align: center;
+        font-family: Inter, sans-serif;
+        font-size: 1.3em;
+        color: #fff;
+
+    }
+
+    .button_icon {
+        margin-top: -2px;
+        height: 60%;
+    }
+}
+
+
 
 .counter_container {
     margin: 0 -100% 0 0;

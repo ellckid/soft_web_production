@@ -10,8 +10,8 @@ import ProfilePage from "../pages/ProfilePage"
 
 export const privateRoutes = [
     { path: '/main', component: MainPage, exact: true },
-    { path: '/catalog', component: CatalogPage, exact: true },
-    { path: '/catalog-2', component: CatalogPage_2, exact: true },
+    { path: '/catalog-2', component: CatalogPage, exact: true },
+    { path: '/catalog', component: CatalogPage_2, exact: true },
     { path: '/basket', component: BasketPage, exact: true },
     { path: '/myorders', component: OrdersPage, exact: true },
     { path: '/myprofile', component: ProfilePage, exact: true }

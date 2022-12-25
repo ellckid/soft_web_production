@@ -4,7 +4,7 @@ import classes from '../footer/Footer.module.css'
 function Footer() {
     return (
         <footer className={classes.main_footer}>
-            <a className={classes.footer_text}>2022 © Мягкий — интернет-магазин бескаркасной мебели. Все права защищены. Доставка по всей России.</a>
+            <a className={[classes.footer_text, classes.no_user_select].join(" ")}>2022 © Мягкий — интернет-магазин бескаркасной мебели. Все права защищены. Доставка по всей России.</a>
         </footer>
     )
 }
