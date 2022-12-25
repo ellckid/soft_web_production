@@ -22,20 +22,17 @@ function LoginPage() {
     return (
         <section className={classes.login_section}>
             {/* header */}
-
             <Header
                 isLight={false}
             />
-
 
             <div className={classes.room}>
                 <div className={classes.login_container}>
                     <AuthForm />
                 </div>
-                <div className={classes.login_footer}>
-                    <Footer />
-                </div>
-
+            </div>
+            <div className={classes.login_footer}>
+                <Footer />
             </div>
 
         </section>

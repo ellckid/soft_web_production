@@ -9,8 +9,8 @@ function Clouds() {
         elem.style.left = '-' + (value * 1.4) + 'px';
     })
     return (
-        <div id="clouds" className={classes.clouds_link}>
-            <img className={classes.clouds_img} src='/assets/img/clouds.png' />
+        <div id="clouds" className={[classes.clouds_link, classes.no_user_select].join(" ")}>
+            <img className={[classes.clouds_img, classes.no_user_select].join(" ")} src='/assets/img/clouds.png' />
         </div>
     )
 }

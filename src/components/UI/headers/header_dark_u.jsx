@@ -8,13 +8,13 @@ const HeaderDark_u = function () {
     return (
         <div className={classes.header_container}>
             <div className={classes.header}>
-                <Link className={classes.logo} to="/main">
+                <a className={classes.logo} href="/index.html">
                     <img className={classes.logo_img} src="/assets/img/logo.png" />
-                </Link>
+                </a>
                 <nav className={classes.nav}>
-                    <Link className={classes.nav_link} to="/catalog">каталог</Link>
-                    <Link className={classes.nav_link} to="/basket">корзина</Link>
-                    <Link className={classes.nav_link} to="/login">войти</Link>
+                    <Link className={classes.nav_link_u} to="/catalog">каталог</Link>
+                    <Link className={classes.nav_link_u} to="/basket">корзина</Link>
+                    <Link className={classes.nav_link_u} to="/login">войти</Link>
                 </nav>
             </div>
         </div>

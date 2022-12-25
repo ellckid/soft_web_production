@@ -60,14 +60,14 @@ function Bushes() {
 
 
     return (
-        <div className={classes.bushes_container}>
-            <img src="/assets/img/leaf.png" id='leaf1' onClick={() => { rotation(leaf) }} className={classes.leaf1} />
-            <img src="/assets/img/leaf.png" id='leaf2' onClick={() => { rotation(leaf) }} className={classes.leaf2} />
-            <img src="/assets/img/leaf.png" id='leaf3' onClick={() => { rotation(leaf) }} className={classes.leaf3} />
-            <img src="/assets/img/leaf.png" id='leaf4' onClick={() => { rotation(leaf) }} className={classes.leaf4} />
-            <img src="/assets/img/leaf.png" id='leaf5' onClick={() => { rotation(leaf) }} className={classes.leaf5} />
+        <div className={[classes.bushes_container, classes.no_user_select].join(" ")}>
+            <img src="/assets/img/leaf.png" id='leaf1' onClick={() => { rotation(leaf) }} className={[classes.leaf1, classes.no_user_select].join(" ")} />
+            <img src="/assets/img/leaf.png" id='leaf2' onClick={() => { rotation(leaf) }} className={[classes.leaf2, classes.no_user_select].join(" ")} />
+            <img src="/assets/img/leaf.png" id='leaf3' onClick={() => { rotation(leaf) }} className={[classes.leaf3, classes.no_user_select].join(" ")} />
+            <img src="/assets/img/leaf.png" id='leaf4' onClick={() => { rotation(leaf) }} className={[classes.leaf4, classes.no_user_select].join(" ")} />
+            <img src="/assets/img/leaf.png" id='leaf5' onClick={() => { rotation(leaf) }} className={[classes.leaf5, classes.no_user_select].join(" ")} />
 
-            <img className={classes.bushes} src="/assets/img/bush.png"></img>
+            <img className={[classes.bushes, classes.no_user_select].join(" ")} src="/assets/img/bush.png"></img>
         </div>
 
     )

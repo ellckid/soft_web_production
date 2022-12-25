@@ -1,4 +1,14 @@
-@media screen and (min-width: 1250px) {
+.no_user_select {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    pointer-events: none;
+}
+
+@media (min-width: 1250px) {
     .clouds_link {
         position: absolute;
         top: 10vh;
@@ -16,7 +26,7 @@
     }
 }
 
-@media screen and (max-width: 1250px) {
+@media (max-width: 1250px) {
     .clouds_link {
         position: absolute;
         width: fit-content;
@@ -35,7 +45,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
     .clouds_link {
         position: absolute;
         width: fit-content;

@@ -24,7 +24,6 @@ const HeaderLight_a = function () {
                         <Link className={classes.nav_link_submenu} to="/basket">Корзина</Link>
                         <Link className={classes.nav_submenu_link} to="/myorders">Мой кабинет</Link>
                         <Link className={classes.nav_submenu_link} onClick={() => {
-                            store.isAuth = false
                             store.logout()
                         }} >Выйти</Link>
                     </ul>
