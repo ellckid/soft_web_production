@@ -12,7 +12,8 @@
         display: flex;
         width: fit-content;
         right: 5vw;
-        bottom: 0;
+        top: 24%;
+
     }
 }
 
@@ -22,7 +23,7 @@
         display: flex;
         width: fit-content;
         right: 1vw;
-        bottom: 0;
+        top: 24%;
     }
 }
 
@@ -32,7 +33,7 @@
         display: none;
         width: fit-content;
         right: 0vw;
-        bottom: 0;
+        top: 24%;
     }
 }
 

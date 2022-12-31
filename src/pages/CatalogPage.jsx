@@ -53,9 +53,9 @@ function CatalogPage() {
 
     return (
         <motion.div className={classes.main}
-            initial={{ x: "100%" }}
+            initial={{ x: "-100%" }}
             animate={{ x: "0" }}
-            exit={{ x: window.innerWidth, transition: { type: "spring", stiffness: 100, duration: "2s" } }}>
+            exit={{ x: window.innerWidth, transition: { type: "linear", duration: "1s" } }}>
             {/* header */}
 
             <Header

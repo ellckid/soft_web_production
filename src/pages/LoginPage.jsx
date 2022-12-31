@@ -24,7 +24,7 @@ function LoginPage() {
         <motion.div className={classes.login_section}
             initial={{ x: "100%" }}
             animate={{ x: "0" }}
-            exit={{ x: window.innerWidth, transition: { type: "spring", stiffness: 100, duration: "2s" } }}>
+            exit={{ x: window.innerWidth, transition: { type: "linear", duration: "1s" } }}>
             {/* header */}
             <Header
                 isLight={false}

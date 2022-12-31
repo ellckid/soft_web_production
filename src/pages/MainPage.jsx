@@ -22,11 +22,12 @@ function MainPage() {
         return <Loader />
     }
     return (
-        <motion.div
+        <motion.section
             className={classes.main}
             initial={{ x: "100%" }}
             animate={{ x: "0" }}
-            exit={{ x: window.innerWidth, transition: { type: "spring", stiffness: 100, duration: "2s" } }}>
+            exit={{ x: window.innerWidth, transition: { type: "linear", duration: 2 } }}>
+
             {/* header */}
 
             <Header
@@ -46,16 +47,14 @@ function MainPage() {
                 <Bushes />
 
                 {/* <!-- footer --> */}
-
                 <div className={classes.room_footer}>
                     <Footer />
                 </div>
-
             </div>
 
 
 
-        </motion.div >
+        </motion.section >
     )
 }
 
