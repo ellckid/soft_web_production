@@ -6,7 +6,8 @@ import AuthForm from "../components/AuthForm/AuthForm";
 import Header from "../components/header";
 import Footer from "../components/UI/footer/Footer";
 import Loader from "../components/UI/loader/Loader";
-import classes from "../pages/css/LoginPage.module.css"
+import classes from "../pages/css/LoginPage.module.css";
+import { motion } from "framer-motion";
 
 function LoginPage() {
     const { store } = useContext(context);
@@ -20,7 +21,10 @@ function LoginPage() {
         return <Loader />
     }
     return (
-        <section className={classes.login_section}>
+        <motion.div className={classes.login_section}
+            initial={{ width: 0 }}
+            animate={{ width: "100%" }}
+            exit={{ x: window.innerWidth, transition: { duration: 2 } }}>
             {/* header */}
             <Header
                 isLight={false}
@@ -35,7 +39,7 @@ function LoginPage() {
                 <Footer />
             </div>
 
-        </section>
+        </motion.div>
 
     )
 

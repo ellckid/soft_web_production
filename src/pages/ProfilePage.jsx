@@ -6,6 +6,7 @@ import Loader from "../components/UI/loader/Loader";
 import classes from "../pages/css/OrdersPage.module.css";
 import { Link } from "react-router-dom";
 import MyProfile from "../components/UI/profileForms/myprofile";
+import { motion } from "framer-motion";
 
 function ProfilePage() {
     const { store } = useContext(context);
@@ -21,7 +22,10 @@ function ProfilePage() {
         return <Loader />
     }
     return (
-        <section className={classes.profile_section}>
+        <motion.div className={classes.profile_section}
+            initial={{ width: 0 }}
+            animate={{ width: "100%" }}
+            exit={{ x: window.innerWidth, transition: { duration: 2 } }}>
             {/* header */}
 
             <Header
@@ -55,7 +59,7 @@ function ProfilePage() {
 
                 <Footer />
             </div>
-        </section >
+        </motion.div >
     )
 
 }

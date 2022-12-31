@@ -8,6 +8,7 @@ import StickySlider from "../components/UI/slider/sticky_slider"
 import Footer from "../components/UI/footer/Footer";
 import classes from "../pages/css/CatalogPage.module.css";
 import CatalogSlider from "../components/UI/slider/sticky_slider";
+import { motion } from "framer-motion";
 // import PuffData from "../data/puff_slider_data.json";
 import CoconData from "../data/cocon_slider_data.json";
 import AuthService from "../services/AuthService";
@@ -51,7 +52,10 @@ function CatalogPage() {
 
 
     return (
-        <section className={classes.main}>
+        <motion.div className={classes.main}
+            initial={{ width: 0 }}
+            animate={{ width: "100%" }}
+            exit={{ x: window.innerWidth, transition: { duration: 2 } }}>
             {/* header */}
 
             <Header
@@ -76,7 +80,7 @@ function CatalogPage() {
                     <Footer />
                 </div>
             </div>
-        </section >
+        </motion.div >
     )
 }
 

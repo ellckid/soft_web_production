@@ -5,6 +5,7 @@ import Loader from "../components/UI/loader/Loader";
 import BasketSlider from "../components/UI/slider/basket_slider";
 import Footer from "../components/UI/footer/Footer";
 import classes from "../pages/css/BasketPage.module.css";
+import { motion } from "framer-motion";
 
 import CoconData from "../data/cocon_slider_data.json";
 import BasketData from "../data/basket_slide.json";
@@ -99,7 +100,10 @@ function BasketPage() {
 
 
     return (
-        <section ref={basketSection} className={classes.main}>
+        <motion.div ref={basketSection} className={classes.main}
+            initial={{ width: 0 }}
+            animate={{ width: "100%" }}
+            exit={{ x: window.innerWidth, transition: { duration: 2 } }}>
             {/* header */}
             <Header
                 isLight={false}
@@ -150,7 +154,7 @@ function BasketPage() {
                 </div>
             </div>
 
-        </section >
+        </motion.div >
     )
 }
 

@@ -9,7 +9,7 @@ import classes from './css/MainPage.module.css'
 import Bushes from "../components/main/bushes";
 import Clouds from "../components/main/clouds";
 import Puff from "../components/main/puff";
-
+import { motion } from "framer-motion";
 
 function MainPage() {
     const { store } = useContext(context);
@@ -22,7 +22,14 @@ function MainPage() {
         return <Loader />
     }
     return (
-        <section className={classes.main}>
+        <motion.div
+            className={classes.main}
+            initial={{ width: 0 }}
+            animate={{ width: "100%" }}
+            exit={{ x: window.innerWidth, transition: { duration: 2 } }}>
+
+
+
             {/* header */}
 
             <Header
@@ -51,7 +58,7 @@ function MainPage() {
 
 
 
-        </section >
+        </motion.div >
     )
 }
 

@@ -2,7 +2,6 @@
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 
 
-
 # **1. Цель проекта**
 
 Цель проекта — разработать веб приложение - интернет магазин бескаркасной мебели.

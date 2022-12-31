@@ -7,6 +7,7 @@ import Header from "../components/header";
 import Footer from "../components/UI/footer/Footer";
 import Loader from "../components/UI/loader/Loader";
 import classes from "../pages/css/RegistrationPage.module.css";
+import { motion } from "framer-motion";
 
 function RegistrationPage() {
     const { store } = useContext(context);
@@ -20,7 +21,10 @@ function RegistrationPage() {
     }
 
     return (
-        <section className={classes.reg_section}>
+        <motion.div className={classes.reg_section}
+            initial={{ width: 0 }}
+            animate={{ width: "100%" }}
+            exit={{ x: window.innerWidth, transition: { duration: 2 } }}>
             {/* header */}
 
             <Header
@@ -37,7 +41,7 @@ function RegistrationPage() {
                 <Footer />
             </div>
 
-        </section>
+        </motion.div>
 
     )
 
