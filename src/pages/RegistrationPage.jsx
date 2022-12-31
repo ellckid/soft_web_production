@@ -21,10 +21,10 @@ function RegistrationPage() {
     }
 
     return (
-        <motion.div className={classes.reg_section}
-            initial={{ width: 0 }}
-            animate={{ width: "100%" }}
-            exit={{ x: window.innerWidth, transition: { duration: 2 } }}>
+        <motion.section className={classes.reg_section}
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: window.innerWidth, transition: { type: "ease", stiffness: 100, duration: "2s" } }}>
             {/* header */}
 
             <Header
@@ -41,7 +41,7 @@ function RegistrationPage() {
                 <Footer />
             </div>
 
-        </motion.div>
+        </motion.section>
 
     )
 

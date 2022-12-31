@@ -101,9 +101,9 @@ function BasketPage() {
 
     return (
         <motion.div ref={basketSection} className={classes.main}
-            initial={{ width: 0 }}
-            animate={{ width: "100%" }}
-            exit={{ x: window.innerWidth, transition: { duration: 2 } }}>
+            initial={{ x: "100%" }}
+            animate={{ x: "0" }}
+            exit={{ x: window.innerWidth, transition: { type: "spring", stiffness: 100, duration: "2s" } }}>
             {/* header */}
             <Header
                 isLight={false}
