@@ -24,5 +24,6 @@ jobs:
       # Build
       - run: npm ci
       - run: npm run build
+      - run: npm test
       # Deploy
       - run: cd dist && rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . ellckid@ellckid.com:/var/www/ellckid.com/html/

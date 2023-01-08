@@ -109,9 +109,9 @@ export default class Store {
             this.isLoading(false)
         }
     }
-    async addOrder(userid, orderlist, totalprice) {
+    async addOrder(orderdate, userid, orderlist, totalprice) {
         try {
-            const response = await AuthService.addOrder(userid, orderlist, totalprice);
+            const response = await AuthService.addOrder(orderdate, userid, orderlist, totalprice);
             console.log(response);
         } catch (e) {
             console.log(e.response?.data);

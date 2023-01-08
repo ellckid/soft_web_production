@@ -37,7 +37,7 @@ function MainPage() {
             <div className={classes.room}>
 
                 {/* <!-- bacground sun clouds puff books bushes --> */}
-                <img className={classes.room_background_img} src="/assets/img/room_background.png" />
+                <img className={classes.room_background_img} src="/assets/img/room_back.png" />
                 <img className={classes.room_books_img} src='/assets/img/books.png' />
                 <img className={classes.room_sun_img} src='/assets/img/sun.png' />
                 <div className={classes.room_clouds}>

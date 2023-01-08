@@ -48,6 +48,8 @@ function BasketPage() {
         getTotalPrice();
 
 
+
+
     }, [])
     useEffect(() => {
         getTotalPrice()
@@ -55,6 +57,19 @@ function BasketPage() {
 
     if (store.isLoading) {
         return <Loader />
+    }
+    function prettyDate(date) {
+
+        var dd = date.getDate();
+        if (dd < 10) dd = '0' + dd;
+
+        var mm = date.getMonth() + 1;
+        if (mm < 10) mm = '0' + mm;
+
+        var yy = date.getFullYear() % 100;
+        if (yy < 10) yy = '0' + yy;
+
+        return dd + '.' + mm + '.' + yy;
     }
 
     function getTotalPrice() {
@@ -125,7 +140,11 @@ function BasketPage() {
                             <div ref={basket_submenu} className={classes.basket_submenu}>
                                 <button className={classes.basket_button} onClick={() => {
                                     if (store.basket.length != 0) {
-                                        store.addOrder(store.user.id, store.basket, TotalPrice);
+                                        let now = new Date()
+                                        let orderdate = prettyDate(now)
+                                        console.log(orderdate)
+
+                                        store.addOrder(orderdate, store.user.id, store.basket, TotalPrice);
                                         console.log('запрос отправлен');
                                         basket_submenu.current.classList.toggle(classes.basket_submenu_open);
                                         store.basket.length = 0;

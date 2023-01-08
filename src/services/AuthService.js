@@ -13,8 +13,8 @@ export default class AuthService {
     static async getProductList() {
         return $api.get('/products')
     }
-    static async addOrder(userid, orderlist, totalprice) {
-        return $api.post('/addorder', { userid, orderlist, totalprice })
+    static async addOrder(orderdate, userid, orderlist, totalprice) {
+        return $api.post('/addorder', { orderdate, userid, orderlist, totalprice })
     }
     static async postOrders(userid) {
         return $api.post('/postorders', { userid })
