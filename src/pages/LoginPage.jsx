@@ -21,10 +21,7 @@ function LoginPage() {
         return <Loader />
     }
     return (
-        <motion.div className={classes.login_section}
-            initial={{ x: "100%" }}
-            animate={{ x: "0" }}
-            exit={{ x: window.innerWidth, transition: { type: "linear", duration: "1s" } }}>
+        <div className={classes.login_section}>
             {/* header */}
             <Header
                 isLight={false}
@@ -39,7 +36,7 @@ function LoginPage() {
                 <Footer />
             </div>
 
-        </motion.div>
+        </div>
 
     )
 

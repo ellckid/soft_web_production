@@ -41,10 +41,7 @@ function CatalogPage_2() {
     }
 
     return (
-        <motion.div className={classes.main}
-            initial={{ x: "-100%" }}
-            animate={{ x: "0" }}
-            exit={{ x: window.innerWidth, transition: { type: "linear", duration: "1s" } }}>
+        <div className={classes.main}>
             {/* header */}
 
             < Header
@@ -76,7 +73,7 @@ function CatalogPage_2() {
                     <Footer />
                 </div>
             </div>
-        </motion.div >
+        </div >
     )
 }
 

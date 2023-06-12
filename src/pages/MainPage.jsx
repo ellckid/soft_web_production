@@ -22,12 +22,7 @@ function MainPage() {
         return <Loader />
     }
     return (
-        <motion.section
-            className={classes.main}
-            initial={{ x: "100%" }}
-            animate={{ x: "0" }}
-            exit={{ x: window.innerWidth, transition: { type: "linear", duration: 2 } }}>
-
+        <section className={classes.main}>
             {/* header */}
 
             <Header
@@ -54,7 +49,7 @@ function MainPage() {
 
 
 
-        </motion.section >
+        </section >
     )
 }
 
